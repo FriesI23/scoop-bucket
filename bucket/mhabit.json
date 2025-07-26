@@ -11,7 +11,7 @@
         }
     },
     "pre_install": [
-        "if (scoop list mhabit-beta -ErrorAction SilentlyContinue) {",
+        "if (scoop list \"^mhabit-beta$\" -ErrorAction SilentlyContinue) {",
         "    error \"Beta version already installed, Abort\"; break",
         "}",
         "",

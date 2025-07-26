@@ -11,7 +11,7 @@
         }
     },
     "pre_install": [
-        "if (scoop list mhabit -ErrorAction SilentlyContinue) {",
+        "if (scoop list \"^mhabit$\" -ErrorAction SilentlyContinue) {",
         "    error \"Stable version already installed, Abort\"; break",
         "}",
         "",
